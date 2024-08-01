@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('image2.jpg') no-repeat center center fixed, rgba(255, 255, 255,0.1);
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+header {
+    background-color: #010a3f;
+    color: rgb(205, 205, 205);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.htext {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+}
+
+.container {
+    background-color: #c7e7f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px rgba(1, 33, 58, 0.1);
+    max-width: 400px;
+    height: auto;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.container:hover {
+    box-shadow: 5px 5px 10px rgba(198, 197, 197, 0.4);
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 0px;
+} 
+
+.result1, .result2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.calculate-btn {
+    padding: 10px 20px;
+    background-color: #a20000;
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculate-btn:hover {
+    background-color: #448AFF;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(228, 225, 225);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-height: 600px) {
+    footer {
+        position: static;
+        margin-top: 20px;
+    }
+}
